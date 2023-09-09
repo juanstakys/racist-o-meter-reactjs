@@ -1,10 +1,11 @@
 import './App.css';
-import './Dictaphone.js'
+import Indicator from './Indicator.js';
 import Dictaphone from './Dictaphone.js';
 
 function App() {
   return (      
     <div>
+      <Indicator />
       <Dictaphone />
     </div>
   );
