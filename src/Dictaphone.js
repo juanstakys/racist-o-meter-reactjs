@@ -3,9 +3,8 @@ import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognitio
 
 const RACIST_O_METER_URL = 'http://192.168.0.13:8080/detection'
 
-const Dictaphone = () => {
+const Dictaphone = ({ onAPIResponse }) => {
   const {
-    interimTranscript,
     finalTranscript,
     resetTranscript,
     listening,
@@ -25,10 +24,13 @@ const Dictaphone = () => {
         }
       })
         .then((response) => response.json())
-        .then((json) => console.log(json))
-        .catch(()=>{console.error("Error al consumir la API")});
+        .then((json) => {
+          onAPIResponse(json.isItRacist)
+          console.log(json)
+        })
+        .catch(() => { console.error("Error al consumir la API") });
     }
-  }, [interimTranscript, finalTranscript])
+  }, [finalTranscript])
 
   if (!browserSupportsSpeechRecognition) {
     return <span>Browser doesn't support speech recognition.</span>;
