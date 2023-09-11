@@ -4,7 +4,7 @@ import Indicator from './Indicator.js';
 import Dictaphone from './Dictaphone.js';
 
 function App() {
-  const [isItRacist, setIsItRacist] = useState(false)
+  const [isItRacist, setIsItRacist] = useState()
 
   return (      
     <div>
