@@ -1,8 +1,14 @@
 import React from "react";
 
-const Indicator = () => {
-    return (
-        <p>Indicador</p>
-    )
+const Indicator = (props) => {
+    if (props.isItRacist) {
+        return (
+            <p>RACIST!</p>
+        )
+    } else {
+        return (
+            <p>NOT RACIST!</p>
+        )
+    }
 };
 export default Indicator;

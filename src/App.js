@@ -5,7 +5,7 @@ import Dictaphone from './Dictaphone.js';
 function App() {
   return (      
     <div>
-      <Indicator />
+      <Indicator isItRacist={false}/>
       <Dictaphone />
     </div>
   );
