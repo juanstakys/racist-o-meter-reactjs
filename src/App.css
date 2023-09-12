@@ -46,10 +46,10 @@
 }
 
 .red-bg {
-  background: linear-gradient(90deg, rgba(255,223,27,1) 35%, rgba(255,107,10,1) 100%);;
+  background: linear-gradient(90deg, rgb(233, 8, 8) 35%, rgb(224, 92, 4) 100%);;
 }
 
 .green-bg {
-  background: linear-gradient(90deg, rgba(255,137,255,1) 35%, rgba(255,69,167,1) 100%);
+  background: linear-gradient(90deg, rgb(84, 226, 23) 35%, rgb(11, 190, 226) 100%);
 ;
 }
