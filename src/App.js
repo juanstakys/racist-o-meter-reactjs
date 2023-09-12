@@ -5,12 +5,14 @@ import Dictaphone from './Dictaphone.js';
 
 function App() {
   const [isItRacist, setIsItRacist] = useState()
+  const [explanation, setExplanation] = useState()
 
   return (      
     <div>
-      <Indicator isItRacist={isItRacist}/>
-      <Dictaphone onAPIResponse={(APIIsItRacist)=>{
+      <Indicator isItRacist={isItRacist} explanation={explanation}/>
+      <Dictaphone onAPIResponse={(APIIsItRacist, APIExplanation)=>{
         setIsItRacist(APIIsItRacist)
+        setExplanation(APIExplanation)
       }}/>
     </div>
   );
