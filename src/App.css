@@ -46,9 +46,10 @@
 }
 
 .red-bg {
-  background-color: red;
+  background: linear-gradient(90deg, rgba(255,223,27,1) 35%, rgba(255,107,10,1) 100%);;
 }
 
 .green-bg {
-  background-color: green;
+  background: linear-gradient(90deg, rgba(255,137,255,1) 35%, rgba(255,69,167,1) 100%);
+;
 }
