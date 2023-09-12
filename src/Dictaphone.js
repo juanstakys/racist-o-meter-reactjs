@@ -25,10 +25,13 @@ const Dictaphone = ({ onAPIResponse }) => {
       })
         .then((response) => response.json())
         .then((json) => {
-          onAPIResponse(json.isItRacist)
+          onAPIResponse(json.isItRacist, json.explanation)
           console.log(json)
         })
-        .catch(() => { console.error("Error al consumir la API") });
+        .catch(() => {
+          console.error("Error al consumir la API")
+          alert("Error al consumir la API")
+        });
     }
   }, [finalTranscript])
 
