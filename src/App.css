@@ -38,6 +38,13 @@
 }
 
 .centered-container {
+  padding: 4%;
+  border: 1px solid black;
+  border-radius:20%;
+}
+
+.red-bg {
+  background: linear-gradient(90deg, rgb(233, 8, 8) 35%, rgb(224, 92, 4) 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,11 +52,11 @@
   height: 100vh;
 }
 
-.red-bg {
-  background: linear-gradient(90deg, rgb(233, 8, 8) 35%, rgb(224, 92, 4) 100%);;
-}
-
 .green-bg {
   background: linear-gradient(90deg, rgb(84, 226, 23) 35%, rgb(11, 190, 226) 100%);
-;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
