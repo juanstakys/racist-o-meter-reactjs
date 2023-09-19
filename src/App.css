@@ -39,8 +39,8 @@
 
 .centered-container {
   padding: 4%;
-  border: 1px solid black;
-  border-radius:20%;
+  /* border: 1px solid black;
+  border-radius:20%; */
 }
 
 .red-bg {
