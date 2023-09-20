@@ -2,7 +2,6 @@ import './App.css';
 import { useState } from 'react';
 import Indicator from './Indicator.js';
 import Dictaphone from './Dictaphone.js';
-import { Card } from '@mui/material';
 
 function App() {
   const [isItRacist, setIsItRacist] = useState()
@@ -14,15 +13,7 @@ function App() {
   return (
     <div className={`${backgroundClass}`}>
       <div className={`centered-container`}>
-        <Card sx={{
-          bgcolor: '#ffffff44',
-          borderRadius: 2,
-          width: 300,
-          position: 'relative',
-          justifyContent: 'center'
-        }}>
         <Indicator isItRacist={isItRacist} explanation={explanation} />
-        </Card>
         <Dictaphone onAPIResponse={(APIIsItRacist, APIExplanation) => {
           setIsItRacist(APIIsItRacist)
           setExplanation(APIExplanation)

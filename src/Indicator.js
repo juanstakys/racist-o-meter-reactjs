@@ -1,8 +1,15 @@
 import React from "react";
+import { Card } from '@mui/material';
 
 const Indicator = (props) => {
     return (
-        <div>
+        <Card sx={{
+            bgcolor: '#ffffff44',
+            borderRadius: 2,
+            width: 300,
+            position: 'relative',
+            justifyContent: 'center'
+          }}>
             <p style={{fontSize: 24}}>
                 {
                     props.isItRacist !== undefined ?
@@ -15,7 +22,7 @@ const Indicator = (props) => {
                 <br/>
                 {props.explanation}
             </p>
-        </div>
+        </Card>
     )
 };
 export default Indicator;
